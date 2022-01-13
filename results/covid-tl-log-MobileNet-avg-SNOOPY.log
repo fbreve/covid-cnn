@@ -1,0 +1,41 @@
+Machine: SNOOPY
+Date: 31/10/2021 Time: 01:00:08
+Alternative Dense Layer: True
+Pooling Application Layer: avg
+Data Augmentation: False
+Model: MobileNet
+N Repeats: 5
+Batch Size: 16
+Multi Optimizer: True
+
+Repetition: 1 of 5
+Acc: 0.9750 Mean: 0.9750 (+/- 0.0000)
+TPR: 0.9500 Mean: 0.9500 (+/- 0.0000)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9744 Mean: 0.9744 (+/- 0.0000)
+
+Repetition: 2 of 5
+Acc: 0.9625 Mean: 0.9688 (+/- 0.0062)
+TPR: 0.9250 Mean: 0.9375 (+/- 0.0125)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9610 Mean: 0.9677 (+/- 0.0067)
+
+Repetition: 3 of 5
+Acc: 0.9675 Mean: 0.9683 (+/- 0.0051)
+TPR: 0.9350 Mean: 0.9367 (+/- 0.0103)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9664 Mean: 0.9673 (+/- 0.0055)
+
+Repetition: 4 of 5
+Acc: 0.9700 Mean: 0.9688 (+/- 0.0045)
+TPR: 0.9400 Mean: 0.9375 (+/- 0.0090)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9691 Mean: 0.9677 (+/- 0.0048)
+
+Repetition: 5 of 5
+Acc: 0.9800 Mean: 0.9710 (+/- 0.0060)
+TPR: 0.9650 Mean: 0.9430 (+/- 0.0136)
+PPV: 0.9948 Mean: 0.9990 (+/- 0.0021)
+F1:  0.9797 Mean: 0.9701 (+/- 0.0064)
+
+Elapsed Time: 22963.3851

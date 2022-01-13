@@ -1,0 +1,41 @@
+Machine: SNOOPY
+Date: 29/10/2021 Time: 19:08:13
+Alternative Dense Layer: True
+Pooling Application Layer: avg
+Data Augmentation: False
+Model: EfficientNetB0
+N Repeats: 5
+Batch Size: 16
+Multi Optimizer: True
+
+Repetition: 1 of 5
+Acc: 0.9725 Mean: 0.9725 (+/- 0.0000)
+TPR: 0.9550 Mean: 0.9550 (+/- 0.0000)
+PPV: 0.9896 Mean: 0.9896 (+/- 0.0000)
+F1:  0.9720 Mean: 0.9720 (+/- 0.0000)
+
+Repetition: 2 of 5
+Acc: 0.9725 Mean: 0.9725 (+/- 0.0000)
+TPR: 0.9500 Mean: 0.9525 (+/- 0.0025)
+PPV: 0.9948 Mean: 0.9922 (+/- 0.0026)
+F1:  0.9719 Mean: 0.9719 (+/- 0.0001)
+
+Repetition: 3 of 5
+Acc: 0.9775 Mean: 0.9742 (+/- 0.0024)
+TPR: 0.9650 Mean: 0.9567 (+/- 0.0062)
+PPV: 0.9897 Mean: 0.9914 (+/- 0.0024)
+F1:  0.9772 Mean: 0.9737 (+/- 0.0025)
+
+Repetition: 4 of 5
+Acc: 0.9625 Mean: 0.9713 (+/- 0.0054)
+TPR: 0.9400 Mean: 0.9525 (+/- 0.0090)
+PPV: 0.9843 Mean: 0.9896 (+/- 0.0037)
+F1:  0.9616 Mean: 0.9707 (+/- 0.0056)
+
+Repetition: 5 of 5
+Acc: 0.9675 Mean: 0.9705 (+/- 0.0051)
+TPR: 0.9450 Mean: 0.9510 (+/- 0.0086)
+PPV: 0.9895 Mean: 0.9896 (+/- 0.0033)
+F1:  0.9668 Mean: 0.9699 (+/- 0.0053)
+
+Elapsed Time: 38169.6922

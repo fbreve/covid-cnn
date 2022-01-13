@@ -1,0 +1,40 @@
+Machine: PRECISION
+Date: 28/10/2021 Time: 10:19:21
+Alternative Dense Layer: True
+Pooling Application Layer: avg
+Data Augmentation: False
+Model: Xception
+N Repeats: 5
+Batch Size: 16
+
+Repetition: 1 of 5
+Acc: 0.9300 Mean: 0.9300 (+/- 0.0000)
+TPR: 0.8600 Mean: 0.8600 (+/- 0.0000)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9247 Mean: 0.9247 (+/- 0.0000)
+
+Repetition: 2 of 5
+Acc: 0.9575 Mean: 0.9438 (+/- 0.0137)
+TPR: 0.9150 Mean: 0.8875 (+/- 0.0275)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9556 Mean: 0.9402 (+/- 0.0154)
+
+Repetition: 3 of 5
+Acc: 0.9550 Mean: 0.9475 (+/- 0.0124)
+TPR: 0.9100 Mean: 0.8950 (+/- 0.0248)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9529 Mean: 0.9444 (+/- 0.0140)
+
+Repetition: 4 of 5
+Acc: 0.9300 Mean: 0.9431 (+/- 0.0132)
+TPR: 0.8600 Mean: 0.8862 (+/- 0.0263)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9247 Mean: 0.9395 (+/- 0.0148)
+
+Repetition: 5 of 5
+Acc: 0.9425 Mean: 0.9430 (+/- 0.0118)
+TPR: 0.8850 Mean: 0.8860 (+/- 0.0235)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9390 Mean: 0.9394 (+/- 0.0132)
+
+Elapsed Time: 46023.9735

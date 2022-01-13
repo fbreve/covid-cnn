@@ -1,0 +1,41 @@
+Machine: SNOOPY
+Date: 29/10/2021 Time: 09:35:06
+Alternative Dense Layer: True
+Pooling Application Layer: avg
+Data Augmentation: False
+Model: ResNet50V2
+N Repeats: 5
+Batch Size: 16
+Multi Optimizer: True
+
+Repetition: 1 of 5
+Acc: 0.9275 Mean: 0.9275 (+/- 0.0000)
+TPR: 0.8550 Mean: 0.8550 (+/- 0.0000)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9218 Mean: 0.9218 (+/- 0.0000)
+
+Repetition: 2 of 5
+Acc: 0.9350 Mean: 0.9313 (+/- 0.0038)
+TPR: 0.8700 Mean: 0.8625 (+/- 0.0075)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9305 Mean: 0.9262 (+/- 0.0043)
+
+Repetition: 3 of 5
+Acc: 0.9375 Mean: 0.9333 (+/- 0.0042)
+TPR: 0.8800 Mean: 0.8683 (+/- 0.0103)
+PPV: 0.9944 Mean: 0.9981 (+/- 0.0027)
+F1:  0.9337 Mean: 0.9287 (+/- 0.0050)
+
+Repetition: 4 of 5
+Acc: 0.9175 Mean: 0.9294 (+/- 0.0078)
+TPR: 0.8350 Mean: 0.8600 (+/- 0.0170)
+PPV: 1.0000 Mean: 0.9986 (+/- 0.0024)
+F1:  0.9101 Mean: 0.9240 (+/- 0.0091)
+
+Repetition: 5 of 5
+Acc: 0.9225 Mean: 0.9280 (+/- 0.0075)
+TPR: 0.8550 Mean: 0.8590 (+/- 0.0153)
+PPV: 0.9884 Mean: 0.9966 (+/- 0.0046)
+F1:  0.9169 Mean: 0.9226 (+/- 0.0087)
+
+Elapsed Time: 30584.9538

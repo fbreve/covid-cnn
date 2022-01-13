@@ -1,0 +1,41 @@
+Machine: DONALD
+Date: 30/10/2021 Time: 18:02:28
+Alternative Dense Layer: True
+Pooling Application Layer: avg
+Data Augmentation: False
+Model: EfficientNetB2
+N Repeats: 5
+Batch Size: 16
+Multi Optimizer: True
+
+Repetition: 1 of 5
+Acc: 0.9725 Mean: 0.9725 (+/- 0.0000)
+TPR: 0.9450 Mean: 0.9450 (+/- 0.0000)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9717 Mean: 0.9717 (+/- 0.0000)
+
+Repetition: 2 of 5
+Acc: 0.9625 Mean: 0.9675 (+/- 0.0050)
+TPR: 0.9400 Mean: 0.9425 (+/- 0.0025)
+PPV: 0.9843 Mean: 0.9921 (+/- 0.0079)
+F1:  0.9616 Mean: 0.9667 (+/- 0.0050)
+
+Repetition: 3 of 5
+Acc: 0.9750 Mean: 0.9700 (+/- 0.0054)
+TPR: 0.9550 Mean: 0.9467 (+/- 0.0062)
+PPV: 0.9948 Mean: 0.9930 (+/- 0.0065)
+F1:  0.9745 Mean: 0.9693 (+/- 0.0055)
+
+Repetition: 4 of 5
+Acc: 0.9600 Mean: 0.9675 (+/- 0.0064)
+TPR: 0.9300 Mean: 0.9425 (+/- 0.0090)
+PPV: 0.9894 Mean: 0.9921 (+/- 0.0059)
+F1:  0.9588 Mean: 0.9667 (+/- 0.0066)
+
+Repetition: 5 of 5
+Acc: 0.9825 Mean: 0.9705 (+/- 0.0083)
+TPR: 0.9700 Mean: 0.9480 (+/- 0.0136)
+PPV: 0.9949 Mean: 0.9927 (+/- 0.0054)
+F1:  0.9823 Mean: 0.9698 (+/- 0.0086)
+
+Elapsed Time: 28699.0904

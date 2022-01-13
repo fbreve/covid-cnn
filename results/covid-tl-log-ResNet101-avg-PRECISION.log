@@ -1,0 +1,41 @@
+Machine: PRECISION
+Date: 01/11/2021 Time: 18:36:28
+Alternative Dense Layer: True
+Pooling Application Layer: avg
+Data Augmentation: False
+Model: ResNet101
+N Repeats: 5
+Batch Size: 16
+Multi Optimizer: True
+
+Repetition: 1 of 5
+Acc: 0.9650 Mean: 0.9650 (+/- 0.0000)
+TPR: 0.9300 Mean: 0.9300 (+/- 0.0000)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9637 Mean: 0.9637 (+/- 0.0000)
+
+Repetition: 2 of 5
+Acc: 0.9275 Mean: 0.9463 (+/- 0.0187)
+TPR: 0.8600 Mean: 0.8950 (+/- 0.0350)
+PPV: 0.9942 Mean: 0.9971 (+/- 0.0029)
+F1:  0.9223 Mean: 0.9430 (+/- 0.0207)
+
+Repetition: 3 of 5
+Acc: 0.9325 Mean: 0.9417 (+/- 0.0166)
+TPR: 0.8650 Mean: 0.8850 (+/- 0.0319)
+PPV: 1.0000 Mean: 0.9981 (+/- 0.0027)
+F1:  0.9276 Mean: 0.9379 (+/- 0.0184)
+
+Repetition: 4 of 5
+Acc: 0.9225 Mean: 0.9369 (+/- 0.0166)
+TPR: 0.8450 Mean: 0.8750 (+/- 0.0326)
+PPV: 1.0000 Mean: 0.9986 (+/- 0.0025)
+F1:  0.9160 Mean: 0.9324 (+/- 0.0186)
+
+Repetition: 5 of 5
+Acc: 0.9575 Mean: 0.9410 (+/- 0.0170)
+TPR: 0.9150 Mean: 0.8830 (+/- 0.0333)
+PPV: 1.0000 Mean: 0.9988 (+/- 0.0023)
+F1:  0.9556 Mean: 0.9370 (+/- 0.0190)
+
+Elapsed Time: 28373.6069

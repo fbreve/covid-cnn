@@ -1,0 +1,41 @@
+Machine: DONALD
+Date: 01/11/2021 Time: 22:30:44
+Alternative Dense Layer: True
+Pooling Application Layer: avg
+Data Augmentation: False
+Model: DenseNet201
+N Repeats: 5
+Batch Size: 16
+Multi Optimizer: True
+
+Repetition: 1 of 5
+Acc: 0.9650 Mean: 0.9650 (+/- 0.0000)
+TPR: 0.9300 Mean: 0.9300 (+/- 0.0000)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9637 Mean: 0.9637 (+/- 0.0000)
+
+Repetition: 2 of 5
+Acc: 0.9500 Mean: 0.9575 (+/- 0.0075)
+TPR: 0.9000 Mean: 0.9150 (+/- 0.0150)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9474 Mean: 0.9555 (+/- 0.0082)
+
+Repetition: 3 of 5
+Acc: 0.9875 Mean: 0.9675 (+/- 0.0154)
+TPR: 0.9750 Mean: 0.9350 (+/- 0.0308)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9873 Mean: 0.9661 (+/- 0.0164)
+
+Repetition: 4 of 5
+Acc: 0.9525 Mean: 0.9637 (+/- 0.0148)
+TPR: 0.9100 Mean: 0.9288 (+/- 0.0288)
+PPV: 0.9945 Mean: 0.9986 (+/- 0.0024)
+F1:  0.9504 Mean: 0.9622 (+/- 0.0158)
+
+Repetition: 5 of 5
+Acc: 0.9925 Mean: 0.9695 (+/- 0.0176)
+TPR: 0.9850 Mean: 0.9400 (+/- 0.0342)
+PPV: 1.0000 Mean: 0.9989 (+/- 0.0022)
+F1:  0.9924 Mean: 0.9683 (+/- 0.0186)
+
+Elapsed Time: 19623.8126

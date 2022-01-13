@@ -1,0 +1,41 @@
+Machine: DONALD
+Date: 02/11/2021 Time: 09:40:34
+Alternative Dense Layer: True
+Pooling Application Layer: avg
+Data Augmentation: False
+Model: InceptionResNetV2
+N Repeats: 5
+Batch Size: 16
+Multi Optimizer: True
+
+Repetition: 1 of 5
+Acc: 0.9600 Mean: 0.9600 (+/- 0.0000)
+TPR: 0.9200 Mean: 0.9200 (+/- 0.0000)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9583 Mean: 0.9583 (+/- 0.0000)
+
+Repetition: 2 of 5
+Acc: 0.9825 Mean: 0.9712 (+/- 0.0113)
+TPR: 0.9800 Mean: 0.9500 (+/- 0.0300)
+PPV: 0.9849 Mean: 0.9925 (+/- 0.0075)
+F1:  0.9825 Mean: 0.9704 (+/- 0.0121)
+
+Repetition: 3 of 5
+Acc: 0.9850 Mean: 0.9758 (+/- 0.0112)
+TPR: 0.9800 Mean: 0.9600 (+/- 0.0283)
+PPV: 0.9899 Mean: 0.9916 (+/- 0.0063)
+F1:  0.9849 Mean: 0.9752 (+/- 0.0120)
+
+Repetition: 4 of 5
+Acc: 0.9675 Mean: 0.9737 (+/- 0.0104)
+TPR: 0.9400 Mean: 0.9550 (+/- 0.0260)
+PPV: 0.9947 Mean: 0.9924 (+/- 0.0056)
+F1:  0.9666 Mean: 0.9731 (+/- 0.0110)
+
+Repetition: 5 of 5
+Acc: 0.9825 Mean: 0.9755 (+/- 0.0099)
+TPR: 0.9750 Mean: 0.9590 (+/- 0.0246)
+PPV: 0.9898 Mean: 0.9919 (+/- 0.0051)
+F1:  0.9824 Mean: 0.9749 (+/- 0.0106)
+
+Elapsed Time: 28423.1779

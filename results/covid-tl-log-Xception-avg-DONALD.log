@@ -1,0 +1,41 @@
+Machine: DONALD
+Date: 02/11/2021 Time: 23:35:49
+Alternative Dense Layer: True
+Pooling Application Layer: avg
+Data Augmentation: False
+Model: Xception
+N Repeats: 5
+Batch Size: 16
+Multi Optimizer: True
+
+Repetition: 1 of 5
+Acc: 0.9650 Mean: 0.9650 (+/- 0.0000)
+TPR: 0.9300 Mean: 0.9300 (+/- 0.0000)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9637 Mean: 0.9637 (+/- 0.0000)
+
+Repetition: 2 of 5
+Acc: 0.9550 Mean: 0.9600 (+/- 0.0050)
+TPR: 0.9100 Mean: 0.9200 (+/- 0.0100)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9529 Mean: 0.9583 (+/- 0.0054)
+
+Repetition: 3 of 5
+Acc: 0.9750 Mean: 0.9650 (+/- 0.0082)
+TPR: 0.9500 Mean: 0.9300 (+/- 0.0163)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9744 Mean: 0.9637 (+/- 0.0088)
+
+Repetition: 4 of 5
+Acc: 0.9550 Mean: 0.9625 (+/- 0.0083)
+TPR: 0.9100 Mean: 0.9250 (+/- 0.0166)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9529 Mean: 0.9610 (+/- 0.0089)
+
+Repetition: 5 of 5
+Acc: 0.9575 Mean: 0.9615 (+/- 0.0077)
+TPR: 0.9150 Mean: 0.9230 (+/- 0.0154)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9556 Mean: 0.9599 (+/- 0.0083)
+
+Elapsed Time: 23078.8334

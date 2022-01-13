@@ -1,0 +1,41 @@
+Machine: PRECISION
+Date: 31/10/2021 Time: 10:26:26
+Alternative Dense Layer: True
+Pooling Application Layer: avg
+Data Augmentation: False
+Model: InceptionV3
+N Repeats: 5
+Batch Size: 16
+Multi Optimizer: True
+
+Repetition: 1 of 5
+Acc: 0.9700 Mean: 0.9700 (+/- 0.0000)
+TPR: 0.9400 Mean: 0.9400 (+/- 0.0000)
+PPV: 1.0000 Mean: 1.0000 (+/- 0.0000)
+F1:  0.9691 Mean: 0.9691 (+/- 0.0000)
+
+Repetition: 2 of 5
+Acc: 0.9775 Mean: 0.9738 (+/- 0.0038)
+TPR: 0.9650 Mean: 0.9525 (+/- 0.0125)
+PPV: 0.9897 Mean: 0.9949 (+/- 0.0051)
+F1:  0.9772 Mean: 0.9731 (+/- 0.0041)
+
+Repetition: 3 of 5
+Acc: 0.9800 Mean: 0.9758 (+/- 0.0042)
+TPR: 0.9600 Mean: 0.9550 (+/- 0.0108)
+PPV: 1.0000 Mean: 0.9966 (+/- 0.0048)
+F1:  0.9796 Mean: 0.9753 (+/- 0.0045)
+
+Repetition: 4 of 5
+Acc: 0.9825 Mean: 0.9775 (+/- 0.0047)
+TPR: 0.9650 Mean: 0.9575 (+/- 0.0103)
+PPV: 1.0000 Mean: 0.9974 (+/- 0.0044)
+F1:  0.9822 Mean: 0.9770 (+/- 0.0049)
+
+Repetition: 5 of 5
+Acc: 0.9650 Mean: 0.9750 (+/- 0.0065)
+TPR: 0.9300 Mean: 0.9520 (+/- 0.0144)
+PPV: 1.0000 Mean: 0.9979 (+/- 0.0041)
+F1:  0.9637 Mean: 0.9744 (+/- 0.0069)
+
+Elapsed Time: 28989.8670
