@@ -1,0 +1,21 @@
+metadata_version: 1
+name: 'COVID-19 Detection on Chest X-Ray Images: A comparison of CNN architectures
+  and ensembles'
+description: COVID-19 quickly became a global pandemic after only four months of its
+  first detection. It is crucial to detect this disease as soon as possible to decrease
+  its spread. The use of chest X-ray (CXR) images became an effective screening strategy,
+  complementary to the reverse transcription-polymerase chain reaction (RT-PCR). Convolutional
+  neural networks (CNNs) are often used for automatic image classification and they
+  can be very useful in CXR diagnostics. In this paper, 21 different CNN architectures
+  are tested and compared in the task of identifying COVID-19 in CXR images. They
+  were applied to the COVIDx8B dataset, a large COVID-19 dataset with 16, 352 CXR
+  images coming from patients of at least 51 countries. Ensembles of CNNs were also
+  employed and they showed better efficacy than individual instances. The best individual
+  CNN instance results were achieved by DenseNet169, with an accuracy of 98.15% and
+  an F1 score of 98.12%. These were further increased to 99.25% and 99.24%, respectively,
+  through an ensemble with five instances of DenseNet169. These results are higher
+  than those obtained in recent works using the same dataset.
+authors:
+- name: Fabricio Aparecido Breve
+  affiliations:
+  - name: Universidade Estadual Paulista "Júlio de Mesquita Filho" (UNESP)
