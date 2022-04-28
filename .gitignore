@@ -2,6 +2,7 @@
 /results (v1 - code error - not valid)
 /weights
 /data
+/v2
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
