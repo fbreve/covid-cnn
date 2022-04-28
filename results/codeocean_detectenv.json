@@ -1138,8 +1138,20 @@
                 "version": "0.1"
             },
             {
+                "name": "_openmp_mutex",
+                "version": "4.5"
+            },
+            {
                 "name": "asn1crypto",
                 "version": "0.24.0"
+            },
+            {
+                "name": "blas",
+                "version": "1.0"
+            },
+            {
+                "name": "bottleneck",
+                "version": "1.3.4"
             },
             {
                 "name": "bzip2",
@@ -1147,11 +1159,11 @@
             },
             {
                 "name": "ca-certificates",
-                "version": "2019.5.15"
+                "version": "2022.3.29"
             },
             {
                 "name": "certifi",
-                "version": "2019.6.16"
+                "version": "2021.10.8"
             },
             {
                 "name": "cffi",
@@ -1174,8 +1186,24 @@
                 "version": "2.7"
             },
             {
+                "name": "daal4py",
+                "version": "2021.5.0"
+            },
+            {
+                "name": "dal",
+                "version": "2021.5.1"
+            },
+            {
                 "name": "idna",
                 "version": "2.8"
+            },
+            {
+                "name": "intel-openmp",
+                "version": "2021.4.0"
+            },
+            {
+                "name": "joblib",
+                "version": "1.1.0"
             },
             {
                 "name": "libarchive",
@@ -1194,6 +1222,14 @@
                 "version": "9.1.0"
             },
             {
+                "name": "libgfortran-ng",
+                "version": "7.3.0"
+            },
+            {
+                "name": "libgomp",
+                "version": "9.3.0"
+            },
+            {
                 "name": "libstdcxx-ng",
                 "version": "9.1.0"
             },
@@ -1210,12 +1246,56 @@
                 "version": "2.10"
             },
             {
+                "name": "mkl",
+                "version": "2021.4.0"
+            },
+            {
+                "name": "mkl-service",
+                "version": "2.4.0"
+            },
+            {
+                "name": "mkl_fft",
+                "version": "1.3.1"
+            },
+            {
+                "name": "mkl_random",
+                "version": "1.2.2"
+            },
+            {
+                "name": "mpi",
+                "version": "1.0"
+            },
+            {
+                "name": "mpich",
+                "version": "3.3.2"
+            },
+            {
                 "name": "ncurses",
                 "version": "6.1"
             },
             {
+                "name": "numexpr",
+                "version": "2.8.1"
+            },
+            {
+                "name": "numpy",
+                "version": "1.21.5"
+            },
+            {
+                "name": "numpy-base",
+                "version": "1.21.5"
+            },
+            {
                 "name": "openssl",
-                "version": "1.1.1c"
+                "version": "1.1.1n"
+            },
+            {
+                "name": "packaging",
+                "version": "21.3"
+            },
+            {
+                "name": "pandas",
+                "version": "1.3.4"
             },
             {
                 "name": "pip",
@@ -1234,6 +1314,10 @@
                 "version": "19.0.0"
             },
             {
+                "name": "pyparsing",
+                "version": "3.0.4"
+            },
+            {
                 "name": "pysocks",
                 "version": "1.7.0"
             },
@@ -1242,8 +1326,16 @@
                 "version": "3.7.3"
             },
             {
+                "name": "python-dateutil",
+                "version": "2.8.2"
+            },
+            {
                 "name": "python-libarchive-c",
                 "version": "2.8"
+            },
+            {
+                "name": "pytz",
+                "version": "2021.3"
             },
             {
                 "name": "readline",
@@ -1258,6 +1350,18 @@
                 "version": "0.15.46"
             },
             {
+                "name": "scikit-learn",
+                "version": "1.0.2"
+            },
+            {
+                "name": "scikit-learn-intelex",
+                "version": "2021.5.0"
+            },
+            {
+                "name": "scipy",
+                "version": "1.6.2"
+            },
+            {
                 "name": "setuptools",
                 "version": "41.0.1"
             },
@@ -1268,6 +1372,14 @@
             {
                 "name": "sqlite",
                 "version": "3.29.0"
+            },
+            {
+                "name": "tbb",
+                "version": "2021.5.0"
+            },
+            {
+                "name": "threadpoolctl",
+                "version": "2.2.0"
             },
             {
                 "name": "tk",
