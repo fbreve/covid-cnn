@@ -31,11 +31,12 @@ LABELS_TEST_FILE   = "../data/COVID-Net/labels/test_COVIDx8B.txt"
 
 # Set RETRAIN to False to use the same weights used to get the published
 # results. Set it to True to train the networks again. Warning: it takes a long
-# time to retrain.
-RETRAIN = True
+# time to retrain the networks.
+RETRAIN = False
 
-# Set USE_PUBLISHED_WEIGHTS to True to use the same weights that were used
-# in the published results. Set to False to use weights from a previous run.
+# When RETRAIN is set to False, set USE_PUBLISHED_WEIGHTS to True to use the
+# same weights that were used in the published results. Set it to False to use
+# the weights from a previous run, stored in /results.
 # Notice that when RETRAIN is set to True, the weights from the retraining
 # phase are always used.
 USE_PUBLISHED_WEIGHTS = True

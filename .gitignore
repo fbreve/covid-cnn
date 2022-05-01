@@ -4,6 +4,7 @@
 /data
 /v2
 /Covid-Net
+/results
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
