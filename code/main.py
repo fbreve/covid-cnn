@@ -8,6 +8,7 @@ Required packages:
     - numpy
     - pandas
     - tensorflow / tensorflow-gpu
+    - tensorflow-addons
     - pillow
     - scikit-learn
 """
