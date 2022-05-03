@@ -4,7 +4,7 @@ Code used for the computer simulations in the paper "COVID-19 Detection on Chest
 If you use this code, please cite the submitted manuscript:
 https://arxiv.org/abs/2111.09972
 
-Please place the Covid-Net V8B dataset inside \data\Covid-Net
+Please place the COVID-Net V8B dataset inside \data\COVID-Net
 
 The weight files are too large for GitHub. Please download them from this link
 https://drive.google.com/drive/folders/1gdlmk9nDUvgDuQ_kwCaPTOKhJJf0ugdb?usp=sharing
