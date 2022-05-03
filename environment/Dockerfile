@@ -1,9 +1,9 @@
-# hash:sha256:e114f90ba9a548b8d20926e402658a63d17d5eb19b8ff23e845950dc65a05e37
+# hash:sha256:0cbac0b9370eac537e61a0a23bc013474c4a7119205a360cde446401507df06d
 FROM registry.codeocean.com/codeocean/miniconda3:4.7.10-cuda10.1-cudnn7-ubuntu18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN conda install -y --channel=esri --channel=defaults \
+RUN conda install -y --channel=defaults --channel=esri --channel=conda-forge \
         _tflow_select==2.1.0 \
         abseil-cpp==20210324.2 \
         absl-py==0.15.0 \
@@ -30,7 +30,6 @@ RUN conda install -y --channel=esri --channel=defaults \
         cudatoolkit==11.3.1 \
         cudnn==8.2.1 \
         daal4py==2021.5.0 \
-        dal==2021.5.0 \
         dataclasses==0.8 \
         debugpy==1.5.1 \
         decorator==5.1.1 \
@@ -46,7 +45,6 @@ RUN conda install -y --channel=esri --channel=defaults \
         grpcio==1.42.0 \
         h5py==3.6.0 \
         hdf5==1.10.6 \
-        icc_rt==2019.0.0 \
         icu==68.1 \
         idna==3.3 \
         importlib-metadata==4.11.3 \
@@ -96,13 +94,11 @@ RUN conda install -y --channel=esri --channel=defaults \
         pyjwt==2.1.0 \
         pyopenssl==21.0.0 \
         pyparsing==3.0.4 \
-        pyreadline==2.1 \
         pysocks==1.7.1 \
         python==3.9.12 \
         python-dateutil==2.8.2 \
         python-flatbuffers==1.12 \
         pytz==2021.3 \
-        pywin32==302 \
         pyzmq==22.3.0 \
         requests==2.27.1 \
         requests-oauthlib==1.3.0 \
@@ -133,13 +129,9 @@ RUN conda install -y --channel=esri --channel=defaults \
         typing_extensions==4.1.1 \
         tzdata==2022a \
         urllib3==1.26.9 \
-        vc==14.2 \
-        vs2015_runtime==14.27.29016 \
         wcwidth==0.2.5 \
         werkzeug==2.0.3 \
         wheel==0.35.1 \
-        win_inet_pton==1.1.0 \
-        wincertstore==0.2 \
         wrapt==1.13.3 \
         xz==5.2.5 \
         yarl==1.6.3 \
