@@ -418,23 +418,35 @@ def train_test_all_models():
         print_and_log("Testing all models in the Training, Validation, and Test subsets:\n")
                
     # Create CSV filenames to hold ACC, TPR, PPV, and F1 results
-    acc_file = "../results/covid-tl-acc-" + str(POOLING) + ".csv"
-    tpr_file = "../results/covid-tl-tpr-" + str(POOLING) + ".csv"
-    ppv_file = "../results/covid-tl-ppv-" + str(POOLING) + ".csv"
-    f1_file =  "../results/covid-tl-f1-"  + str(POOLING) + ".csv"
+    avg_acc_file = "../results/covid-tl-avg-acc-" + str(POOLING) + ".csv"
+    avg_tpr_file = "../results/covid-tl-avg-tpr-" + str(POOLING) + ".csv"
+    avg_ppv_file = "../results/covid-tl-avg-ppv-" + str(POOLING) + ".csv"
+    avg_f1_file =  "../results/covid-tl-avg-f1-"  + str(POOLING) + ".csv"
+
+    std_acc_file = "../results/covid-tl-std-acc-" + str(POOLING) + ".csv"
+    std_tpr_file = "../results/covid-tl-std-tpr-" + str(POOLING) + ".csv"
+    std_ppv_file = "../results/covid-tl-std-ppv-" + str(POOLING) + ".csv"
+    std_f1_file =  "../results/covid-tl-std-f1-"  + str(POOLING) + ".csv"
     
     # Load label files
     df_train = load_data(LABELS_TRAIN_FILE)
     df_test = load_data(LABELS_TEST_FILE)
     
-    # Matrixes to save ACC, TPR, PPV and F1.
+    # Matrixes to save ACC, TPR, PPV and F1 mean and standard deviation.
     # Each line corresponds to a model.
     # Columns correspond to Train, Validation, and Test subsets
     mtl_size = len(MODEL_TYPE_LIST)
-    tab_acc = np.zeros([mtl_size,3])
-    tab_tpr = np.zeros([mtl_size,3])
-    tab_ppv = np.zeros([mtl_size,3])
-    tab_f1 = np.zeros([mtl_size,3])    
+    
+    tab_avg_acc = np.zeros([mtl_size,3])
+    tab_avg_tpr = np.zeros([mtl_size,3])
+    tab_avg_ppv = np.zeros([mtl_size,3])
+    tab_avg_f1 = np.zeros([mtl_size,3])
+    
+    tab_std_acc = np.zeros([mtl_size,3])
+    tab_std_tpr = np.zeros([mtl_size,3])
+    tab_std_ppv = np.zeros([mtl_size,3])
+    tab_std_f1 = np.zeros([mtl_size,3])  
+
     
     # Repeat for each model
     for model_index, model_type in enumerate(MODEL_TYPE_LIST):
@@ -474,24 +486,40 @@ def train_test_all_models():
             print("F1  [Train, Val, Test]: ", f1[rep])
         
         # Save the ACC, TPR, PPV, and F1 averages for each model
-        tab_acc[model_index] = np.mean(acc,0)
-        tab_tpr[model_index] = np.mean(tpr,0)
-        tab_ppv[model_index] = np.mean(ppv,0)
-        tab_f1[model_index] = np.mean(f1,0)
+        tab_avg_acc[model_index] = np.mean(acc,0)
+        tab_avg_tpr[model_index] = np.mean(tpr,0)
+        tab_avg_ppv[model_index] = np.mean(ppv,0)
+        tab_avg_f1[model_index] = np.mean(f1,0)
+        
+        # Save the ACC, TPR, PPV, and F1 standard deviations for each model
+        tab_std_acc[model_index] = np.std(acc,0)
+        tab_std_tpr[model_index] = np.std(tpr,0)
+        tab_std_ppv[model_index] = np.std(ppv,0)
+        tab_std_f1[model_index] = np.std(f1,0)        
         
         # Print results of the model to the screen and the log file:
-        print_and_log("Model: %s" % (model_type))    
-        print_and_log("ACC [Train, Val, Test]: {}".format(tab_acc[model_index]))
-        print_and_log("TPR [Train, Val, Test]: {}".format(tab_tpr[model_index]))
-        print_and_log("PPV [Train, Val, Test]: {}".format(tab_ppv[model_index]))
-        print_and_log("F1  [Train, Val, Test]: {}\n".format(tab_f1[model_index]))
+        print_and_log("Averages - Model: %s" % (model_type))    
+        print_and_log("ACC [Train, Val, Test]: {}".format(tab_avg_acc[model_index]))
+        print_and_log("TPR [Train, Val, Test]: {}".format(tab_avg_tpr[model_index]))
+        print_and_log("PPV [Train, Val, Test]: {}".format(tab_avg_ppv[model_index]))
+        print_and_log("F1  [Train, Val, Test]: {}\n".format(tab_avg_f1[model_index]))
+
+        print_and_log("Standard Deviations - Model: %s" % (model_type))    
+        print_and_log("ACC [Train, Val, Test]: {}".format(tab_std_acc[model_index]))
+        print_and_log("TPR [Train, Val, Test]: {}".format(tab_std_tpr[model_index]))
+        print_and_log("PPV [Train, Val, Test]: {}".format(tab_std_ppv[model_index]))
+        print_and_log("F1  [Train, Val, Test]: {}\n".format(tab_std_f1[model_index]))
+
            
         # Save the results of the model in CSV files
-        np.savetxt(acc_file, tab_acc, delimiter=',', fmt='%0.4f')
-        np.savetxt(tpr_file, tab_tpr, delimiter=',', fmt='%0.4f')
-        np.savetxt(ppv_file, tab_ppv, delimiter=',', fmt='%0.4f')
-        np.savetxt(f1_file,  tab_f1,  delimiter=',', fmt='%0.4f')
-     
+        np.savetxt(avg_acc_file, tab_avg_acc, delimiter=',', fmt='%0.4f')
+        np.savetxt(avg_tpr_file, tab_avg_tpr, delimiter=',', fmt='%0.4f')
+        np.savetxt(avg_ppv_file, tab_avg_ppv, delimiter=',', fmt='%0.4f')
+        np.savetxt(avg_f1_file,  tab_avg_f1,  delimiter=',', fmt='%0.4f')
+        np.savetxt(std_acc_file, tab_std_acc, delimiter=',', fmt='%0.4f')
+        np.savetxt(std_tpr_file, tab_std_tpr, delimiter=',', fmt='%0.4f')
+        np.savetxt(std_ppv_file, tab_std_ppv, delimiter=',', fmt='%0.4f')
+        np.savetxt(std_f1_file,  tab_std_f1,  delimiter=',', fmt='%0.4f')        
 
 # Ensembles of the best models (one instance of each):
 def ensembles():
@@ -507,7 +535,7 @@ def ensembles():
     print_and_log("Ensembles of one instance of each of the Top N models:\n")
     
     # Load the F1 scores
-    f1_file = "../results/covid-tl-f1-"  + str(POOLING) + ".csv"
+    f1_file = "../results/covid-tl-avg-f1-"  + str(POOLING) + ".csv"
     f1_scores = np.loadtxt(f1_file, delimiter=',')
     
     # Gets the list of best performing methods regarding F1 score
@@ -629,7 +657,7 @@ def ensembles_all_instances():
     print_and_log("Ensembles of all instances of each of the Top N models:\n")
     
     # Load the F1 scores
-    f1_file = "../results/covid-tl-f1-"  + str(POOLING) + ".csv"
+    f1_file = "../results/covid-tl-avg-f1-"  + str(POOLING) + ".csv"
     f1_scores = np.loadtxt(f1_file, delimiter=',')
     
     # Gets the list of best performing methods regarding F1 score
@@ -639,9 +667,11 @@ def ensembles_all_instances():
     # List of ensembles to construct using the top-N models:
     ens_list = np.concatenate((np.arange(2,8),[len(MODEL_TYPE_LIST)]))
 
+    # Matrix to hold the scores
+    scores = []
+
     # For each list of Top N models:
     for ens in ens_list:              
-        scores = []
         predictions = np.empty([ens*N_REPEATS, 400, 2])      
         # Get the top 'ens' best performers.
         ens_members = np.take(MODEL_TYPE_LIST, f1_ranking[-ens:])            
