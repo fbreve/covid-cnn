@@ -1,4 +1,4 @@
-# hash:sha256:812060d1bc46883081cf0ffa81b90a07e82e6e4d28478b584bb51a9608c04604
+# hash:sha256:817f9b3c22c573cd1b2de81b7df45ceec3612d311d780bb0f6b243db69ea36d2
 FROM registry.codeocean.com/codeocean/miniconda3:4.7.10-cuda10.1-cudnn7-ubuntu18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -9,5 +9,5 @@ RUN conda install -y --channel=esri \
         pillow==7.1.2 \
         scikit-learn==1.0.2 \
         tensorflow-addons==0.9.1 \
-        tensorflow-gpu==2.1.0 \
+        tensorflow-gpu==2.5.0 \
     && conda clean -ya
