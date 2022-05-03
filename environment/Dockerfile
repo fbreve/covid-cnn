@@ -1,8 +1,9 @@
-# hash:sha256:1f0b7797910a9feafce38b5d514833497a9cc1cf5fe2e8002e9fdafd58d4ec5b
+# hash:sha256:d05522c011de8258c217b28113674fb439d6c4fed8d44ccd4aeafd3db4388d49
 FROM registry.codeocean.com/codeocean/miniconda3:4.7.10-cuda10.1-cudnn7-ubuntu18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN conda install -y \
         numpy \
+        pandas \
     && conda clean -ya
