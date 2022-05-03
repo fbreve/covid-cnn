@@ -1,14 +1,9 @@
-# hash:sha256:bdc71249e5ca82316b9003b82b48127bf43e92e0d4eab4d3619a7bcf33ed07ba
+# hash:sha256:bc6653626783c46aff333709a26c950a61bc966fed67ef505296496a187f1cb0
 FROM registry.codeocean.com/codeocean/miniconda3:4.7.10-cuda10.1-cudnn7-ubuntu18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-        anaconda \
-    && rm -rf /var/lib/apt/lists/*
-
-RUN conda install -y \
+RUN conda install -y --channel=esri \
         numpy==latest \
         pandas \
         pillow \
@@ -16,3 +11,6 @@ RUN conda install -y \
         tensorflow-addons \
         tensorflow-gpu \
     && conda clean -ya
+
+RUN pip install -U --no-cache-dir \
+    tensorflow-gpu
