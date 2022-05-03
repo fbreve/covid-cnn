@@ -1,4 +1,4 @@
-# hash:sha256:808764faa29f670de01b19931400fb53686917b420278500511fff8a8d150a5c
+# hash:sha256:05ca407af8e6fff1764082cdd9887eba85385f16a0244ea2ce1851fc6c73ba14
 FROM registry.codeocean.com/codeocean/miniconda3:4.7.10-cuda10.1-cudnn7-ubuntu18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -6,7 +6,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN conda install -y --channel=defaults --channel=esri --channel=conda-forge \
         anaconda \
         cudatoolkit \
-        cuddn \
+        cudnn \
         numpy \
         pandas \
         pillow \
