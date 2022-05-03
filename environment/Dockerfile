@@ -1,13 +1,13 @@
-# hash:sha256:c25b03aff2d032c753da807aa136960487d9a69465a4707c9f04310669724bf8
+# hash:sha256:93eaad1b6d5df53a596ad1c2d642c8378e3e13174c2326b8491fd1c8afe2b829
 FROM registry.codeocean.com/codeocean/miniconda3:4.7.10-cuda10.1-cudnn7-ubuntu18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN conda install -y --channel=defaults --channel=esri --channel=conda-forge \
-        numpy==1.19.5 \
-        pandas==1.3.5 \
-        pillow==9.0.1 \
-        scikit-learn==1.0.2 \
+        numpy \
+        pandas \
+        pillow \
+        scikit-learn \
     && conda clean -ya
 
 RUN pip install -U --no-cache-dir \
