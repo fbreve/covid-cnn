@@ -1,4 +1,4 @@
-# hash:sha256:93eaad1b6d5df53a596ad1c2d642c8378e3e13174c2326b8491fd1c8afe2b829
+# hash:sha256:a8f99fe797f212cac09952737648bf6c8d5785e0e9b1f2625a687c4ae9f01ebb
 FROM registry.codeocean.com/codeocean/miniconda3:4.7.10-cuda10.1-cudnn7-ubuntu18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -11,6 +11,7 @@ RUN conda install -y --channel=defaults --channel=esri --channel=conda-forge \
     && conda clean -ya
 
 RUN pip install -U --no-cache-dir \
-    cudnn==8.2.1 \
-    tensorflow-addons==0.13.0 \
-    tensorflow-gpu==2.5.0
+    cudatoolkit \
+    cudnn \
+    tensorflow-addons \
+    tensorflow-gpu
