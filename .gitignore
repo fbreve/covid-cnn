@@ -1,3 +1,4 @@
+# Project-specific directories
 /pcc (not used)
 /results (v1 - code error - not valid)
 /weights
@@ -5,6 +6,38 @@
 /v1
 /v2
 /Covid-Net
+
+# Model weights and checkpoints
+*.h5
+*.hdf5
+*.keras
+*.pb
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.tflite
+*.weights
+*.bin
+
+# Scientific / MATLAB / serialized data files
+*.mat
+*.asv
+*.pkl
+*.pickle
+*.joblib
+*.tfrecord
+
+# Archives and raw image datasets
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.dcm
+*.nii
+*.nii.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
